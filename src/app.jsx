@@ -8,13 +8,14 @@ import Navbar from './components/navbar.jsx';
 import Hero from './components/hero.jsx';
 import Dashboard from './components/dashboard.jsx';
 import About from './components/about.jsx';
-import Methodology from './components/methodology.jsx'; // Adicionado
+import Methodology from './components/methodology.jsx';
 import VideoGrid from './components/videogrid.jsx';
-import Services from './components/services.jsx'; // Adicionado
+import Services from './components/services.jsx';
 import Contact from './components/contact.jsx';
-import ScrollReveal from './components/scrollreveal.jsx';
+import ScrollReveal from './components/scrollReveal.jsx'; // CORRIGIDO: 'R' maiúsculo para bater com o arquivo
 import Footer from './components/footer.jsx';
 import WhatsApp from './components/whatsapp.jsx';
+import CookieBanner from './components/cookieBanner.jsx'; // ADICIONADO: Import que faltava
 import './index.css';
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
     <Router>
       <AnimatePresence mode="wait">
         {loading ? (
-          /* TELA DE CARREGAMENTO */
           <motion.div 
             key="loader"
             initial={{ opacity: 1 }}
@@ -59,7 +59,6 @@ function App() {
             </motion.div>
           </motion.div>
         ) : (
-          /* CONTEÚDO PRINCIPAL */
           <motion.div 
             key="content"
             initial={{ opacity: 0 }}
@@ -72,6 +71,7 @@ function App() {
             <CustomCursor /> 
             <Navbar />
             <WhatsApp />
+            <CookieBanner /> 
             
             <Routes>
               <Route path="/" element={
@@ -86,7 +86,6 @@ function App() {
                     <About />
                   </ScrollReveal>
 
-                  {/* Metodologia: O "Como" ela faz */}
                   <ScrollReveal>
                     <Methodology />
                   </ScrollReveal>
@@ -95,7 +94,6 @@ function App() {
                     <VideoGrid />
                   </ScrollReveal>
 
-                  {/* Serviços: O que ela vende */}
                   <ScrollReveal>
                     <Services />
                   </ScrollReveal>
