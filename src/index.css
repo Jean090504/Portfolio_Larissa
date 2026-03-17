@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset Global para garantir que NADA seja branco por padrão */
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF9F6; /* Cor base */
+  color: #2D2D2D;            /* Força a cor chumbo */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Esconde o cursor padrão */
+html, body, a, button {
+  cursor: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6; /* cor 'base' */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DBCFC2; /* cor 'accent' */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2D2D2D; /* cor 'authority' */
+}
+
+/* Efeito Aesthetic de Grão */
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.04; /* Quase invisível, mas faz diferença */
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+}
