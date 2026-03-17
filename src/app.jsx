@@ -12,10 +12,10 @@ import Methodology from './components/methodology.jsx';
 import VideoGrid from './components/videogrid.jsx';
 import Services from './components/services.jsx';
 import Contact from './components/contact.jsx';
-import ScrollReveal from './components/scrollReveal.jsx'; // CORRIGIDO: 'R' maiúsculo para bater com o arquivo
+import ScrollReveal from './components/scrollReveal.jsx';
 import Footer from './components/footer.jsx';
 import WhatsApp from './components/whatsapp.jsx';
-import CookieBanner from './components/cookieBanner.jsx'; // ADICIONADO: Import que faltava
+import CookieBanner from './components/cookieBanner.jsx';
 import './index.css';
 
 function App() {
