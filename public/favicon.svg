@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#FAF9F6" stroke="#2D2D2D" stroke-width="2"/>
+  
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" 
+        style="font-family: 'Playfair Display', serif; font-weight: 900; font-size: 60px; fill: #2D2D2D;">
+    L
+  </text>
+</svg>
