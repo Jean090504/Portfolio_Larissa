@@ -50,3 +50,19 @@ html, body, a, button {
   opacity: 0.04; /* Quase invisível, mas faz diferença */
   background-image: url('https://grainy-gradients.vercel.app/noise.svg');
 }
+
+/* Esconde o cursor customizado em tablets e celulares */
+@media (max-width: 1024px) {
+  .custom-cursor { 
+    display: none !important;
+  }
+  
+  /* Devolve o controle do cursor padrão para o sistema */
+  * {
+    cursor: auto !important;
+  }
+  
+  body, html {
+    cursor: default !important;
+  }
+}

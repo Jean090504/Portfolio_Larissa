@@ -3,8 +3,10 @@ import { MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function WhatsApp() {
-  // Substitua pelo número real da Larissa (ex: 5511999999999)
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá Larissa, vi seu portfólio e gostaria de saber mais sobre seu serviço de Curadoria Digital.";
+  // Substitua o '5511999999999' pelo número real dela
+  const numero = "+5511980791619";
+  const mensagem = encodeURIComponent("Olá Larissa! Vi seu portfólio e gostaria de saber mais sobre sua curadoria estratégica.");
+  const whatsappUrl = `https://wa.me/${numero}?text=${mensagem}`;
 
   return (
     <motion.a
