@@ -16,6 +16,7 @@ import ScrollReveal from './components/scrollReveal.jsx';
 import Footer from './components/footer.jsx';
 import WhatsApp from './components/whatsapp.jsx';
 import CookieBanner from './components/cookieBanner.jsx';
+import NotFound from './components/notFound.jsx';
 import './index.css';
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
             <CookieBanner /> 
             
             <Routes>
+              {/* ROTA PRINCIPAL: Tudo o que compõe a Home vai aqui dentro */}
               <Route path="/" element={
                 <main>
                   <Hero />
@@ -105,6 +107,9 @@ function App() {
                   <Footer />
                 </main>
               } />
+
+              {/* ROTA 404: Se o link não for "/", ele cai aqui */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </motion.div>
         )}
